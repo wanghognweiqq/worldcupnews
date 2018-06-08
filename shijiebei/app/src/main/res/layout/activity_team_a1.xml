@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50sp"
                 android:gravity="center"
-                android:text="俄罗斯征战世界杯阵容"
+                android:text="XX征战世界杯阵容"
                 android:textColor="#000000"
                 android:textSize="30dp" />
             <View
@@ -54,10 +54,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="#ffffff"
-                android:text="门将：阿金费耶夫(莫斯科中央陆军)、加布洛夫(布鲁日)、鲁涅夫(泽尼特)
-　　后卫：格拉纳特(喀山红宝石)、伊格纳舍维奇(莫斯科中央陆军)、库德里亚绍夫(喀山红宝石)、库捷波夫(莫斯科斯巴达)、塞梅诺夫(格罗兹尼)、斯莫尔尼科夫(泽尼特)、费尔南德斯(莫斯科中央陆军)
-　　中场：加辛斯基(克拉斯诺达尔)、戈洛温(莫斯科中央陆军)、扎戈耶夫(莫斯科中央陆军)、叶罗欣(泽尼特)、日尔科夫(泽尼特)、佐布宁(莫斯科斯巴达)、库兹亚耶夫(泽尼特)、安东-米兰丘克(莫斯科火车头)、萨梅多夫(莫斯科斯巴达)、切里舍夫(比利亚雷亚尔)
-　　前锋：久巴(图拉兵工厂)、阿列克谢-米兰丘克(莫斯科火车头)、斯莫洛夫(克拉斯诺达尔)"
+                android:text="球队简介"
                 />
             <View
                 android:layout_width="wrap_content"

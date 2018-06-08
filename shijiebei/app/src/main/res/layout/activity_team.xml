@@ -42,16 +42,16 @@
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="5sp"
                         android:layout_marginTop="10sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
                         <Button
                             android:id="@+id/a1"
-                            android:layout_width="120dp"
-                            android:layout_height="80dp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_weight="1"
                             android:background="@mipmap/eluosi"
@@ -61,14 +61,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="俄罗斯"/>
+                            android:text="俄罗斯"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -84,15 +85,17 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="沙特阿拉伯"/>
+                            android:text="沙特阿拉伯"
+                            android:textSize="16dp"
+                            />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -108,14 +111,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="乌拉圭"/>
+                            android:text="乌拉圭"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -131,7 +135,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="埃及"/>
+                            android:text="埃及"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -152,9 +157,9 @@
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -170,14 +175,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="葡萄牙"/>
+                            android:text="葡萄牙"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -193,15 +199,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="西班牙"/>
+                            android:text="西班牙"
+                            android:textSize="18dp"/>
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -217,14 +224,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="伊朗"/>
+                            android:text="伊朗"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -240,7 +248,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="摩洛哥"/>
+                            android:text="摩洛哥"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -260,9 +269,9 @@
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -278,14 +287,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="法国"/>
+                            android:text="法国"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -301,15 +311,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="丹麦" />
+                            android:text="丹麦"
+                            android:textSize="18dp"/>
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -325,14 +336,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="澳大利亚"/>
+                            android:text="澳大利亚"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -348,7 +360,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="秘鲁"/>
+                            android:text="秘鲁"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -368,9 +381,9 @@
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -386,13 +399,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="冰岛"/>
+                            android:text="冰岛"
+                            android:textSize="18dp"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -408,13 +422,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="克罗地亚"/>
+                            android:text="克罗地亚"
+                            android:textSize="18dp"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -430,15 +445,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="阿根廷"/>
+                            android:text="阿根廷"
+                            android:textSize="18dp"/>
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -454,7 +470,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="尼日利亚"/>
+                            android:text="尼日利亚"
+                            android:textSize="18dp"/>
                     </LinearLayout>
                 </LinearLayout>
                 <TextView
@@ -473,9 +490,9 @@
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -491,14 +508,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="塞尔维亚"/>
+                            android:text="塞尔维亚"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -514,15 +532,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="瑞士"/>
+                            android:text="瑞士"
+                            android:textSize="18dp"/>
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -538,19 +557,20 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="巴西"/>
+                            android:text="巴西"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/e5"
+                            android:id="@+id/e4"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -561,7 +581,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="哥斯达黎加"/>
+                            android:text="哥斯达黎加"
+                            android:textSize="16dp"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -582,9 +603,9 @@
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -600,14 +621,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="德国"/>
+                            android:text="德国"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -623,15 +645,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="瑞典"/>
+                            android:text="瑞典"
+                            android:textSize="18dp"/>
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -647,14 +670,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="韩国"/>
+                            android:text="韩国"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -670,7 +694,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="墨西哥"/>
+                            android:text="墨西哥"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -691,9 +716,9 @@
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -709,14 +734,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="英格兰"/>
+                            android:text="英格兰"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -732,15 +758,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="比利时"/>
+                            android:text="比利时"
+                            android:textSize="18dp"/>
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -756,14 +783,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="巴拿马"/>
+                            android:text="巴拿马"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -779,7 +807,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="突尼斯"/>
+                            android:text="突尼斯"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -800,9 +829,9 @@
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -818,14 +847,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="波兰"/>
+                            android:text="波兰"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -841,15 +871,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="日本"/>
+                            android:text="日本"
+                            android:textSize="18dp"/>
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -865,14 +896,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="哥伦比亚"/>
+                            android:text="哥伦比亚"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0sp"
-                        android:layout_height="100sp"
-                        android:layout_marginLeft="20sp"
-                        android:layout_marginTop="10sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -888,7 +920,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="塞内加尔"/>
+                            android:text="塞内加尔"
+                            android:textSize="18dp"/>
                     </LinearLayout>
 
                 </LinearLayout>

@@ -19,6 +19,15 @@ public class TeamA1Activity extends AppCompatActivity {
         teamtitle = findViewById(R.id.teamtitle);
         teamcontext = findViewById(R.id.teamcontext);
         teamimage = findViewById(R.id.teamimage);
-        teamtitle.setText("111");
+
+        Bundle bundle = getIntent().getExtras();//获取从mainactivity中传过来的对象
+
+        String title = bundle.getString("title");//根据设定的键值获取对应的信息
+        String context = bundle.getString("context");
+        int imgid = bundle.getInt("imgid");
+
+        teamtitle.setText(title);
+        teamcontext.setText(context);
+        teamimage.setImageResource(imgid);
     }
 }
