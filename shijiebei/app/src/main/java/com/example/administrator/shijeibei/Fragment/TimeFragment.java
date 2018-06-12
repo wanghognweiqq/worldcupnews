@@ -1,9 +1,11 @@
 package com.example.administrator.shijeibei.Fragment;
 
+import android.app.DownloadManager;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,9 +14,18 @@ import android.widget.ListView;
 import com.example.administrator.shijeibei.Adapter.TimeAdapter;
 import com.example.administrator.shijeibei.Entity.Time;
 import com.example.administrator.shijeibei.R;
+import com.example.administrator.shijeibei.Util.OkHttpUtil;
+import com.example.administrator.shijeibei.Util.Utility;
 
+import org.litepal.crud.DataSupport;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
 
 /**
  * Created by Administrator on 2018/6/6.
@@ -25,43 +36,61 @@ public class TimeFragment extends Fragment {
     private ListView lvtime;
     private TimeAdapter timeAdapter;
     private List<Time> times;
+    private List<Time> alltime = new ArrayList<>();
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.time,container,false);
         lvtime = view.findViewById(R.id.lv_time);
-        times = getdata();
-        timeAdapter = new TimeAdapter(context, R.layout.time_item,times);
+        timeAdapter = new TimeAdapter(context, R.layout.time_item,alltime);
+        queryTime();
         lvtime.setAdapter(timeAdapter);
         return view;
-    }
-    private List<Time> getdata(){
-        List<Time> times = new ArrayList<>();
-        Time time = new Time();
-        time.setTime("2018.6.6 23:00");
-        time.setZhuchang("俄罗斯");
-        time.setKechang("英国");
-        time.setScore1(0);
-        time.setScore2(0);
-        time.setImage1(R.mipmap.tab_home);
-        time.setImage2(R.mipmap.tab_home_selected);
-        times.add(time);
-
-        Time time1 = new Time();
-        time1.setTime("2018.6.6 23:00");
-        time1.setZhuchang("俄罗斯");
-        time1.setKechang("英国");
-        time1.setScore1(0);
-        time1.setScore2(0);
-        time1.setImage1(R.mipmap.tab_home);
-        time1.setImage2(R.mipmap.tab_home_selected);
-        times.add(time1);
-        return times;
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         this.context = context;
+    }
+
+    public void queryTime () {
+        times = DataSupport.findAll(Time.class);
+        if (times.size() > 0) {
+            alltime.clear();
+            for (Time time : times) {
+                alltime.add(time);
+                timeAdapter.notifyDataSetChanged();
+                lvtime.setSelection(0);
+            }
+        }else {
+            queryFromServer();
+        }
+    }
+
+    public void queryFromServer () {
+        String address = "http://10.7.85.227:8080/WorldCupNews_Server/selecttime.action";
+        OkHttpUtil.sendOkHttpRequest(address, new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responsetext = response.body().string();
+                Log.d("LHY", responsetext);
+                Boolean result = false;
+                result = Utility.handleTimeResponse(responsetext);
+                if (result) {
+                    getActivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            queryTime();
+                        }
+                    });
+                }
+            }
+        });
     }
 }

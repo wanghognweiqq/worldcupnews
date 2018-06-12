@@ -1,15 +1,17 @@
 package com.example.administrator.shijeibei.Entity;
 
+import org.litepal.crud.DataSupport;
+
 /**
  * Created by Administrator on 2018/6/7.
  */
 
-public class Time {
+public class Time extends DataSupport {
     private String time;
     private String zhuchang;
     private String kechang;
-    private int score1;
-    private int score2;
+    private String score1;
+    private String score2;
     private int image1;
     private int image2;
 
@@ -37,19 +39,19 @@ public class Time {
         this.kechang = kechang;
     }
 
-    public int getScore1() {
+    public String getScore1() {
         return score1;
     }
 
-    public void setScore1(int score1) {
+    public void setScore1(String score1) {
         this.score1 = score1;
     }
 
-    public int getScore2() {
+    public String getScore2() {
         return score2;
     }
 
-    public void setScore2(int score2) {
+    public void setScore2(String score2) {
         this.score2 = score2;
     }
 
