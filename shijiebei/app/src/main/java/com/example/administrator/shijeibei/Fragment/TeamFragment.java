@@ -3,6 +3,7 @@ package com.example.administrator.shijeibei.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.administrator.shijeibei.Activity.TeamActivity;
+import com.example.administrator.shijeibei.Activity.TeamA1Activity;
 import com.example.administrator.shijeibei.R;
 
 /**
@@ -104,7 +105,7 @@ public class TeamFragment extends Fragment {
             switch (v.getId()){
                 case R.id.a1:
                     Intent intent1=new Intent();
-                    intent1.setClass(mContext, TeamActivity.class);
+                    intent1.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "俄罗斯国家队出征大名单";
                     textcontext ="　　门将：阿金费耶夫(莫斯科中央陆军)、加布洛夫(布鲁日)、鲁涅夫(泽尼特)\n" +
@@ -124,7 +125,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.a2:
                     Intent intent2=new Intent();
-                    intent2.setClass(mContext, TeamActivity.class);
+                    intent2.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "沙特阿拉伯国家队出征大名单";
                     textcontext ="　　北京时间6月4日，亚洲劲旅沙特阿拉伯公布了俄罗世界杯23人大名单，效力于西甲莱万特的穆瓦拉德领衔球队。\n" +
@@ -147,7 +148,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.a3:
                     Intent intent3=new Intent();
-                    intent3.setClass(mContext, TeamActivity.class);
+                    intent3.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "乌拉圭国家队出征大名单";
                     textcontext ="　　北京时间6月2日消息，乌拉圭公布参加世界杯的最终23人名单，苏亚雷斯和卡瓦尼领衔出战。\n" +
@@ -174,7 +175,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.a4:
                     Intent intent4=new Intent();
-                    intent4.setClass(mContext, TeamActivity.class);
+                    intent4.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "埃及国家队出征大名单";
                     textcontext ="　　6月4日，埃及国家队公布了俄罗斯世界杯23人最终名单，萨拉赫领衔，埃尔内尼入选\n" +
@@ -199,7 +200,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.b1:
                     Intent intentb1=new Intent();
-                    intentb1.setClass(mContext, TeamActivity.class);
+                    intentb1.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "葡萄牙国家队出征大名单";
                     textcontext ="　　蔷薇鸿鹄5月28日讯，今日，葡萄牙国家队公布了征战世界杯的23人大名单号码分布，其中头号球星，也是球队队长的C罗身披象征性的7号，而来自中超大连一方的冯特则身披6号战袍。值得一提的是，上街欧洲杯的主力前锋纳尼落选，一起遭弃的还有坎塞洛和塞梅多和戈麦斯。\n" +
@@ -227,7 +228,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.b2:
                     Intent intentb2=new Intent();
-                    intentb2.setClass(mContext, TeamActivity.class);
+                    intentb2.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "西班牙国家队出征大名单";
                     textcontext ="　　北京时间5月21日消，西班牙国家队公布了参加世界杯的23人名单，切尔西前锋莫拉塔无缘入选。\n" +
@@ -252,7 +253,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.b3:
                     Intent intentb3=new Intent();
-                    intentb3.setClass(mContext, TeamActivity.class);
+                    intentb3.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "伊朗国家队出征大名单";
                     textcontext ="　　伊朗足协官方公布了征战2018俄罗斯世界杯的23人名单，“伊朗梅西”阿兹蒙领衔最新球队阵容。世界杯中，伊朗在B组中将面对西班牙、葡萄牙与摩洛哥。\n" +
@@ -276,7 +277,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.b4:
                     Intent intentb4=new Intent();
-                    intentb4.setClass(mContext, TeamActivity.class);
+                    intentb4.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "摩洛哥国家队出征大名单";
                     textcontext ="　　北京时间6月4日，摩洛哥公布了2018世界杯23人最终名单。尤文后卫贝纳蒂亚和皇马后卫阿什拉夫入选摩洛哥国家队世界杯阵容。\n" +
@@ -306,7 +307,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.c1:
                     Intent intentc1=new Intent();
-                    intentc1.setClass(mContext, TeamActivity.class);
+                    intentc1.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "法国国家队出征大名单";
                     textcontext ="　　北京时间5月18日，法国国家队主教练德尚公布了2018年俄罗斯世界杯23人大名单，格列兹曼、姆巴佩、博格巴等巨星悉数入围法国国家队阵容。 \n" +
@@ -343,7 +344,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.c2:
                     Intent intentc2=new Intent();
-                    intentc2.setClass(mContext, TeamActivity.class);
+                    intentc2.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "丹麦国家队出征大名单";
                     textcontext ="　　北京时间6月4日凌晨，丹麦足协公布了参加俄罗斯世界杯的23人名单。热刺中场埃里克森领衔，切尔西后卫克里斯滕森、莱斯特门将舒梅切尔等名将都入选，但30岁的国家队多年主力本特纳因伤落选。 \n" +
@@ -372,7 +373,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.c3:
                     Intent intentc3=new Intent();
-                    intentc3.setClass(mContext, TeamActivity.class);
+                    intentc3.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "澳大利亚国家队出征大名单";
                     textcontext ="　　 北京时间6月3日，澳大利亚足协公布了出征2018俄罗斯世界杯的23人大名单，卡希尔领衔，耶迪纳克入选最新澳大利亚国家足球队阵容。 \n" +
@@ -401,7 +402,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.c4:
                     Intent intentc4=new Intent();
-                    intentc4.setClass(mContext, TeamActivity.class);
+                    intentc4.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "秘鲁国家队出征大名单";
                     textcontext ="　　北京时间6月4日，秘鲁公布了征战2018俄罗斯世界杯的23人大名单，队长格雷罗解禁领衔，前德甲名将法尔范入围秘鲁国家队2018世界杯阵容。 \n" +
@@ -435,7 +436,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.d1:
                     Intent intentd1=new Intent();
-                    intentd1.setClass(mContext, TeamActivity.class);
+                    intentd1.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "冰岛国家队出征大名单";
                     textcontext ="　　北京时间5月11日晚，冰岛足协公布了参加2018俄罗斯世界杯的23人大名单。冰岛公布的大名单中，在英超效力的古德蒙松、西古德森等名将在列，绝大部分球员都在海外联赛效力。\n" +
@@ -469,7 +470,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.d2:
                     Intent intentd2=new Intent();
-                    intentd2.setClass(mContext, TeamActivity.class);
+                    intentd2.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "克罗地亚国家队出征大名单";
                     textcontext ="　　北京时间6月4日，克罗地亚公布了参加2018世界杯的23人大最终名单，莫德里奇、拉基蒂奇领衔，曼朱基奇、佩里西奇入选克罗地亚国家队阵容。 \n" +
@@ -496,7 +497,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.d3:
                     Intent intentd3=new Intent();
-                    intentd3.setClass(mContext, TeamActivity.class);
+                    intentd3.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "阿根廷国家队出征大名单";
                     textcontext ="　　北京时间5月22日凌晨，阿根廷足协正式宣布世界杯阿根廷国家队23人大名单。\n" +
@@ -530,7 +531,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.d4:
                     Intent intentd4=new Intent();
-                    intentd4.setClass(mContext, TeamActivity.class);
+                    intentd4.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "尼日利亚国家队出征大名单";
                     textcontext ="　　6月4日，埃及国家队公布了俄罗斯世界杯23人最终名单，萨拉赫领衔，埃尔内尼入选\n" +
@@ -554,7 +555,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.e1:
                     Intent intente1=new Intent();
-                    intente1.setClass(mContext, TeamActivity.class);
+                    intente1.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "塞尔维亚国家队出征大名单";
                     textcontext ="　　北京时间6月2日，塞尔维亚国家队公布了2018世界杯23人大名单，曼联中场大将马蒂奇领衔，中超广州富力后卫托西奇入选塞尔维亚最新国家队阵容。 \n" +
@@ -582,7 +583,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.e2:
                     Intent intente2=new Intent();
-                    intente2.setClass(mContext, TeamActivity.class);
+                    intente2.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "沙特阿拉伯国家队出征大名单";
                     textcontext ="　　北京时间6月4日，瑞士官方公布了征战俄罗斯世界杯的23人名单，沙奇里、扎卡领衔，利希施泰纳、R罗德里格斯贝赫拉米等名将悉数入选最新国家队球队阵容。 \n" +
@@ -610,7 +611,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.e3:
                     Intent intente3=new Intent();
-                    intente3.setClass(mContext, TeamActivity.class);
+                    intente3.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "巴西国家队出征大名单";
                     textcontext ="　　 北京时间5月15日凌晨1点，巴西国家队主教练蒂特公布2018俄罗斯世界杯桑巴军团巴西国家队23人正式名单阵容！内马尔领衔，蒂亚戈-席尔瓦、马塞洛、保利尼奥、卡塞米罗、库蒂尼奥等名将纷纷入选巴西2018世界杯国家足球队阵容。 \n" +
@@ -640,7 +641,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.e4:
                     Intent intente4=new Intent();
-                    intente4.setClass(mContext, TeamActivity.class);
+                    intente4.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "哥斯达黎加国家队出征大名单";
                     textcontext ="　　北京时间5月15日凌晨，哥斯达黎加官方公布参加2018世界杯的23人大名单。 \n" +
@@ -668,7 +669,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.f1:
                     Intent intentf1=new Intent();
-                    intentf1.setClass(mContext, TeamActivity.class);
+                    intentf1.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "德国国家队出征大名单";
                     textcontext ="　　北京时间6月4日下午，德国足协公布了征战2018俄罗斯世界杯的最终23人大名单。队长诺伊尔伤愈复出，领衔卫冕冠军的最新23人名单，胡梅尔斯、博阿滕、克罗斯、穆勒、厄齐尔等名将也都纷纷在列。多特球星罗伊斯最终入选，踏上个人职业生涯的首次大赛征程。\n" +
@@ -693,7 +694,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.f2:
                     Intent intentf2=new Intent();
-                    intentf2.setClass(mContext, TeamActivity.class);
+                    intentf2.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "瑞典家队出征大名单";
                     textcontext ="　　 北京时间5月16日消息，瑞典足协公布了参加2018俄罗斯世界杯的23人名单。 \n" +
@@ -723,7 +724,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.f3:
                     Intent intentf3=new Intent();
-                    intentf3.setClass(mContext, TeamActivity.class);
+                    intentf3.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "韩国国家队出征大名单";
                     textcontext ="　　北京时间6月2日上午，韩国足协公布了参加2018年世界杯的23人名单。热刺攻击手孙兴慜领衔，效力于广州恒大的金英权则成为韩国队中的中超独苗。\n" +
@@ -752,7 +753,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.f4:
                     Intent intentf4=new Intent();
-                    intentf4.setClass(mContext, TeamActivity.class);
+                    intentf4.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "墨西哥国家队出征大名单";
                     textcontext ="　　北京时间6月4日，墨西哥足协公布了出战2018世界杯的23人大名单。“小豌豆”埃尔南德斯领衔，39岁的老将马克斯历史上第五次代表墨西哥队征战世界杯。小将埃里克-古铁雷斯作为唯一后补。 \n" +
@@ -782,7 +783,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.g1:
                     Intent intenth1=new Intent();
-                    intenth1.setClass(mContext, TeamActivity.class);
+                    intenth1.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "英格兰国家队出征大名单";
                     textcontext ="　　英格兰代表队公布了世界杯23人大名单号码，斯特林将身披10号，凯恩获得9号。\n" +
@@ -806,7 +807,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.g2:
                     Intent intentg2=new Intent();
-                    intentg2.setClass(mContext, TeamActivity.class);
+                    intentg2.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "比利时国家队出征大名单";
                     textcontext ="　　北京时间6月4日，比利时主帅罗伯托-马丁内斯提交了世界杯23人最终名单，阿扎尔、德布劳内领衔，中超球员维特塞尔&卡拉斯科在列，贾努扎伊在列，本特克无缘，罗马中场纳因戈兰从一开始就无缘欧洲红魔世界杯大名单。\n" +
@@ -840,7 +841,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.g3:
                     Intent intentg3=new Intent();
-                    intentg3.setClass(mContext, TeamActivity.class);
+                    intentg3.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "巴拿马国家队出征大名单";
                     textcontext ="　　北京时间5月31日，巴拿马国家队公布了2018世界杯23人正式大名单，多名美职联球员入选，拉科鲁尼亚前锋迪亚斯入围巴拿马最新国家队阵容。\n" +
@@ -876,7 +877,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.g4:
                     Intent intentg4=new Intent();
-                    intentg4.setClass(mContext, TeamActivity.class);
+                    intentg4.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "突尼斯国家队出征大名单";
                     textcontext ="　　北京时间6月2日，在结束与土耳其的热身赛后，突尼斯主帅纳比尔·马卢勒公布了参加俄罗斯世界杯的23人大名单：头号球星优素福·穆萨克尼因伤落选，莫埃齐、哈利勒·卡姆曼、比莱·莫斯尼、卡里姆·拉里比、穆罕默德·瓦埃勒和艾哈迈德·阿凯奇等6名球员，都在最后一刻遭到舍弃。\n" +
@@ -904,7 +905,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.h1:
                     Intent intenthh1=new Intent();
-                    intenthh1.setClass(mContext, TeamActivity.class);
+                    intenthh1.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "波兰国家队出征大名单";
                     textcontext ="　　北京时间6月4日，波兰足协正式公布了参加世界杯的23人大名单，拜仁前锋莱万多夫斯基无疑是队内名气最响亮的球星。斯泽斯尼、泽林斯基、米利克等名将悉数入选。\n" +
@@ -927,7 +928,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.h2:
                     Intent intenth2=new Intent();
-                    intenth2.setClass(mContext, TeamActivity.class);
+                    intenth2.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "日本国家队出征大名单";
                     textcontext ="　　日本足协官网宣布了参加2018俄罗斯世界杯的23人最终名单，之前备受关注的香川真司在列。值得一提的是，这份名单中一共有16名旅欧的海外球员。\n" +
@@ -959,7 +960,7 @@ public class TeamFragment extends Fragment {
                     break;
                 case R.id.h3:
                     Intent intenth3=new Intent();
-                    intenth3.setClass(mContext, TeamActivity.class);
+                    intenth3.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "哥伦比亚国家队出征大名单";
                     textcontext ="　　北京时间6月4日，哥伦比亚官方公布了世界杯23人大名单，J罗与法尔考等球星入围，申花队长莫雷诺不幸落选。\n" +
@@ -983,7 +984,7 @@ public class TeamFragment extends Fragment {
 
                 case R.id.h4:
                     Intent intenth4=new Intent();
-                    intenth4.setClass(mContext, TeamActivity.class);
+                    intenth4.setClass(mContext, TeamA1Activity.class);
 
                     texttitle = "塞内加尔家队出征大名单";
                     textcontext ="　　北京时间5月18日，塞内加尔官方公布了出战2018年俄罗斯世界杯的23人大名单。利物浦前锋马内和那不勒斯中卫库利巴利是最大牌的球员。塞内加尔23人基本来自于欧洲联赛，只有门将恩迪亚耶在几内亚踢球。\n" +
