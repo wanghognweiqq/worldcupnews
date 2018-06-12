@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,9 +13,15 @@ import android.widget.ListView;
 import com.example.administrator.shijeibei.Adapter.TimeAdapter;
 import com.example.administrator.shijeibei.Entity.Time;
 import com.example.administrator.shijeibei.R;
+import com.example.administrator.shijeibei.Util.OkHttpUtil;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
 
 /**
  * Created by Administrator on 2018/6/6.
@@ -38,7 +45,7 @@ public class TimeFragment extends Fragment {
     private List<Time> getdata(){
         List<Time> times = new ArrayList<>();
         Time time = new Time();
-        time.setTime("2018.6.6 23:00");
+        time.setTime("2018-6-6 23:00");
         time.setZhuchang("俄罗斯");
         time.setKechang("英国");
         time.setScore1(0);
@@ -48,7 +55,7 @@ public class TimeFragment extends Fragment {
         times.add(time);
 
         Time time1 = new Time();
-        time1.setTime("2018.6.6 23:00");
+        time1.setTime("2018-6-6 23:00");
         time1.setZhuchang("俄罗斯");
         time1.setKechang("英国");
         time1.setScore1(0);
@@ -56,6 +63,20 @@ public class TimeFragment extends Fragment {
         time1.setImage1(R.mipmap.tab_home);
         time1.setImage2(R.mipmap.tab_home_selected);
         times.add(time1);
+
+        String address = "http://10.7.85.227:8080/WorldCupNews_Server/selecttime.action";
+        OkHttpUtil.sendOkHttpRequest(address, new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String responsetext = response.body().string();
+                Log.d("LHY", responsetext);
+            }
+        });
         return times;
     }
 
