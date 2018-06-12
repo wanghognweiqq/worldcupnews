@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.shijeibei.Activity.TeamA1Activity"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="#48d1cc"
+                android:gravity="center"
+                android:text="Team"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/teamtitle"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:text="XX征战世界杯阵容"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <ImageView
+                android:id="@+id/teamimage"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@mipmap/els" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/teamcontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:text="球队简介"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
