@@ -126,8 +126,8 @@ public class HomeFragment extends Fragment {
 
     public void refresh() {
 //        finish();
-//        Intent intent=new Intent(MainActivity.this,JsoupActivity.class);
-//        startActivity(intent);
+        Intent intent=new Intent(context,MainActivity.class);
+        startActivity(intent);
     }
 
 
