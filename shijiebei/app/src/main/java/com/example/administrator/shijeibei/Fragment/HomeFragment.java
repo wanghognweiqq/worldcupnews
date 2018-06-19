@@ -17,6 +17,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
+import com.example.administrator.shijeibei.Activity.LoginActivity;
 import com.example.administrator.shijeibei.Activity.MainActivity;
 import com.example.administrator.shijeibei.Adapter.ArticleAdapter;
 import com.example.administrator.shijeibei.Entity.Article;
@@ -38,6 +39,7 @@ public class HomeFragment extends Fragment {
     private Context context;
     private TextView tvRefresh;
     private ListView lvNew;
+    private TextView tvLogin;
     List<Article> articles = new ArrayList<Article>();
     Handler handler=new Handler(){
         @Override
@@ -56,7 +58,7 @@ public class HomeFragment extends Fragment {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                             String strUri= (String) ((TextView)view.findViewById(R.id.tv_uri)).getText();
-                            Uri uri=Uri.parse(strUri);
+                            Uri uri=Uri.parse(strUri);  //字符串转化为uri
                             Intent intent=new Intent(Intent.ACTION_VIEW,uri);
                             startActivity(intent);
                         }
@@ -86,7 +88,14 @@ public class HomeFragment extends Fragment {
             }
         });
 
-
+        tvLogin=view.findViewById(R.id.tv_login);
+        tvLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 
@@ -97,7 +106,7 @@ public class HomeFragment extends Fragment {
 //                List<Article> articles = new ArrayList<Article>();
             try {
                 for(int i=1;i<=1;i++) {
-                    Document doc = Jsoup.connect("https://voice.hupu.com/china/" + Integer.toString(i)).get();
+                    Document doc = Jsoup.connect("https://voice.hupu.com/soccer/" + Integer.toString(i)).get();
                     Elements titleLinks = doc.select("div.list-hd");
                     Elements timeLinks = doc.select("div.otherInfo");
                     Document doc1 = Jsoup.connect(titleLinks.get(i).select("a").attr("href")).get();
@@ -126,8 +135,9 @@ public class HomeFragment extends Fragment {
 
     public void refresh() {
 //        finish();
-//        Intent intent=new Intent(MainActivity.this,JsoupActivity.class);
-//        startActivity(intent);
+        Intent intent=new Intent(context,MainActivity.class);
+        startActivity(intent);
+
     }
 
 
