@@ -1,19 +1,16 @@
 package com.example.administrator.shijeibei.Activity;
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.os.Bundle;
 
 import com.example.administrator.shijeibei.R;
 
-public class TeamActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_team_a1);
+        setContentView(R.layout.activity_register);
     }
 
 }

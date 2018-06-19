@@ -1,7 +1,9 @@
 package com.example.administrator.shijeibei.Activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,5 +31,10 @@ public class TeamA1Activity extends AppCompatActivity {
         teamtitle.setText(title);
         teamcontext.setText(context);
         teamimage.setImageResource(imgid);
+    }
+    public void ceshi(View view){
+        Intent intent = new Intent();
+        intent.setClass(TeamA1Activity.this,LoginActivity.class);
+        startActivity(intent);
     }
 }
