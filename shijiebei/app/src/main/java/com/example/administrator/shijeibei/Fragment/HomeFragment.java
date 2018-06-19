@@ -20,6 +20,7 @@ import android.widget.TextView;
 import com.example.administrator.shijeibei.Activity.MainActivity;
 import com.example.administrator.shijeibei.Adapter.ArticleAdapter;
 import com.example.administrator.shijeibei.Entity.Article;
+import com.example.administrator.shijeibei.Layout.RefreshableView;
 import com.example.administrator.shijeibei.R;
 
 import org.jsoup.Jsoup;
@@ -38,6 +39,7 @@ public class HomeFragment extends Fragment {
     private Context context;
     private TextView tvRefresh;
     private ListView lvNew;
+    private RefreshableView refreshableView;
     List<Article> articles = new ArrayList<Article>();
     Handler handler=new Handler(){
         @Override
@@ -78,14 +80,22 @@ public class HomeFragment extends Fragment {
         Thread thread= new DownloadThread();
         thread.start();
 
-        tvRefresh=view.findViewById(R.id.tv_refresh);
-        tvRefresh.setOnClickListener(new View.OnClickListener() {
+//        tvRefresh=view.findViewById(R.id.tv_refresh);
+//        tvRefresh.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                refresh();
+//            }
+//        });
+        refreshableView = view.findViewById(R.id.rv_home);
+        refreshableView.setOnRefreshListener(new RefreshableView.PullToRefreshListener() {
             @Override
-            public void onClick(View v) {
-                refresh();
+            public void onRefresh() {
+                Intent intent=new Intent(context,MainActivity.class);
+                startActivity(intent);
+                refreshableView.finishRefreshing();
             }
-        });
-
+        },2);
 
         return view;
     }
@@ -124,11 +134,11 @@ public class HomeFragment extends Fragment {
     }
 
 
-    public void refresh() {
-//        finish();
-        Intent intent=new Intent(context,MainActivity.class);
-        startActivity(intent);
-    }
+//    public void refresh() {
+////        finish();
+//        Intent intent=new Intent(context,MainActivity.class);
+//        startActivity(intent);
+//    }
 
 
     @Override
