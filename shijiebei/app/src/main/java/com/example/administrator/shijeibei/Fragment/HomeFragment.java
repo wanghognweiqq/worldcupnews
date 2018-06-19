@@ -97,7 +97,7 @@ public class HomeFragment extends Fragment {
 //                List<Article> articles = new ArrayList<Article>();
             try {
                 for(int i=1;i<=1;i++) {
-                    Document doc = Jsoup.connect("https://voice.hupu.com/china/" + Integer.toString(i)).get();
+                    Document doc = Jsoup.connect("https://voice.hupu.com/soccer/" + Integer.toString(i)).get();
                     Elements titleLinks = doc.select("div.list-hd");
                     Elements timeLinks = doc.select("div.otherInfo");
                     Document doc1 = Jsoup.connect(titleLinks.get(i).select("a").attr("href")).get();
