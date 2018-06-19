@@ -18,7 +18,7 @@
             android:layout_weight="3"
             android:layout_height="50dp"
             android:textColor="#FFFFFF"
-            android:text="中超新闻"/>
+            android:text="世界杯新闻"/>
         <TextView
             android:id="@+id/tv_refresh"
             android:textColor="#FFFFFF"
