@@ -18,7 +18,7 @@
                 android:orientation="vertical"
                 >
                 <TextView
-                    android:background="#48d1cc"
+                    android:background="@color/blue_400"
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
                     android:text="Team"
@@ -26,6 +26,7 @@
                     android:textSize="20dp"
                     android:textColor="#ffffff"
                     />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50sp"

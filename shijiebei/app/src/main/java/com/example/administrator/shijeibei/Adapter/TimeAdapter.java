@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.administrator.shijeibei.Entity.Time;
 import com.example.administrator.shijeibei.R;
+import com.example.administrator.shijeibei.Util.Utility;
 
 import java.util.List;
 
@@ -40,10 +41,10 @@ public class TimeAdapter extends ArrayAdapter<Time> {
         tvtime.setText(time.getTime());
         tvname1.setText(time.getZhuchang());
         tvname2.setText(time.getKechang());
-        tvscore1.setText(time.getScore1()+"");
-        tvscore2.setText(time.getScore2()+"");
-        ivimage1.setImageResource(time.getImage1());
-        ivimage2.setImageResource(time.getImage2());
+        tvscore1.setText(time.getScore1());
+        tvscore2.setText(time.getScore2());
+        ivimage1.setImageResource(Utility.handleImage(time.getZhuchang()));
+        ivimage2.setImageResource(Utility.handleImage(time.getKechang()));
         return view;
     }
 

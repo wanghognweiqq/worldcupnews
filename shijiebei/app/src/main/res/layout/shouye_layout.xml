@@ -10,45 +10,37 @@
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:background="@mipmap/zuqiu">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="3"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tv_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:paddingLeft="5dp"
-            android:textColor="#FFFFFF"
-            android:text="登录"/>
         <TextView
             android:gravity="center_vertical"
-            android:paddingLeft="80dp"
+            android:paddingLeft="102dp"
             android:textSize="30sp"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
             android:layout_height="50dp"
             android:textColor="#FFFFFF"
-            android:text="中超新闻"/>
-
-        </LinearLayout>
+            android:text="世界杯新闻"/>
         <TextView
-            android:id="@+id/tv_refresh"
+            android:id="@+id/tv_login"
             android:textColor="#FFFFFF"
             android:paddingLeft="50dp"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:paddingTop="22dp"
             android:layout_height="wrap_content"
-            android:text="刷新"/>
+            android:text="登录 "/>
 
     </LinearLayout>
+
+    <com.example.administrator.shijeibei.Layout.RefreshableView
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <ListView
         android:layout_marginTop="10dp"
         android:id="@+id/lv_new"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></ListView>
+
+    </com.example.administrator.shijeibei.Layout.RefreshableView>
 
 </LinearLayout>
