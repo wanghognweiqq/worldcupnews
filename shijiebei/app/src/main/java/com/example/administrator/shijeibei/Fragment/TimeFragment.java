@@ -1,6 +1,5 @@
 package com.example.administrator.shijeibei.Fragment;
 
-import android.app.DownloadManager;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,6 +12,7 @@ import android.widget.ListView;
 
 import com.example.administrator.shijeibei.Adapter.TimeAdapter;
 import com.example.administrator.shijeibei.Entity.Time;
+import com.example.administrator.shijeibei.Layout.RefreshableView;
 import com.example.administrator.shijeibei.R;
 import com.example.administrator.shijeibei.Util.OkHttpUtil;
 import com.example.administrator.shijeibei.Util.Utility;
@@ -37,14 +37,23 @@ public class TimeFragment extends Fragment {
     private TimeAdapter timeAdapter;
     private List<Time> times;
     private List<Time> alltime = new ArrayList<>();
+    private RefreshableView refreshableView;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.time,container,false);
         lvtime = view.findViewById(R.id.lv_time);
+        refreshableView = view.findViewById(R.id.rv_time);
         timeAdapter = new TimeAdapter(context, R.layout.time_item,alltime);
         queryTime();
         lvtime.setAdapter(timeAdapter);
+        refreshableView.setOnRefreshListener(new RefreshableView.PullToRefreshListener() {
+            @Override
+            public void onRefresh() {
+                queryFromServer();
+                refreshableView.finishRefreshing();
+            }
+        },0);
         return view;
     }
 
@@ -79,7 +88,6 @@ public class TimeFragment extends Fragment {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 String responsetext = response.body().string();
-                Log.d("LHY", responsetext);
                 Boolean result = false;
                 result = Utility.handleTimeResponse(responsetext);
                 if (result) {

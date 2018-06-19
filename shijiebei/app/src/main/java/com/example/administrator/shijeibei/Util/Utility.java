@@ -8,6 +8,7 @@ import com.example.administrator.shijeibei.R;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.litepal.crud.DataSupport;
 
 /**
  * Created by Administrator on 2018/6/12.
@@ -16,6 +17,7 @@ import org.json.JSONObject;
 public class Utility {
 
     public static boolean handleTimeResponse (String response) {
+        DataSupport.deleteAll(Time.class);
         if (!TextUtils.isEmpty(response)) {
             try {
                 JSONArray AllTime = new JSONArray(response);

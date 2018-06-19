@@ -21,7 +21,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50sp"
-                android:background="#48d1cc"
+                android:background="@color/blue_400"
                 android:gravity="center"
                 android:text="Team"
                 android:textColor="#ffffff"
@@ -54,11 +54,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:textColor="#ffffff"
-                android:text="球队简介"
+                android:text="球队简介
+
+
+"
                 />
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="200dp"/>
+                android:layout_height="100dp"/>
 
 
         </LinearLayout>
