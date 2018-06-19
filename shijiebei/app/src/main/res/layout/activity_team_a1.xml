@@ -26,10 +26,6 @@
                 android:text="Team"
                 android:textColor="#ffffff"
                 android:textSize="20dp" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="ceshi"/>
 
             <TextView
                 android:id="@+id/teamtitle"

@@ -32,9 +32,4 @@ public class TeamA1Activity extends AppCompatActivity {
         teamcontext.setText(context);
         teamimage.setImageResource(imgid);
     }
-    public void ceshi(View view){
-        Intent intent = new Intent();
-        intent.setClass(TeamA1Activity.this,LoginActivity.class);
-        startActivity(intent);
-    }
 }
