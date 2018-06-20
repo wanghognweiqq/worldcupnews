@@ -29,10 +29,18 @@
             android:text="刷新"/>
 
     </LinearLayout>
+
+    <com.example.administrator.shijeibei.Layout.RefreshableView
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <ListView
         android:layout_marginTop="10dp"
         android:id="@+id/lv_new"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></ListView>
+
+    </com.example.administrator.shijeibei.Layout.RefreshableView>
 
 </LinearLayout>
