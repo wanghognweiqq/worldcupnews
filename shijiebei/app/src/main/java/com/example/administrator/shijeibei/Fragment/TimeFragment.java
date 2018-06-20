@@ -78,7 +78,7 @@ public class TimeFragment extends Fragment {
     }
 
     public void queryFromServer () {
-        String address = "http://10.7.85.227:8080/WorldCupNews_Server/selecttime.action";
+        String address = "http://10.7.85.219:8080/WorldCupNews_Server/selecttime.action";
         OkHttpUtil.sendOkHttpRequest(address, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {

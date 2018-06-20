@@ -9,15 +9,16 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 android:background="@mipmap/bg2"
 tools:context="com.example.administrator.shijeibei.Activity.LoginActivity">
-<ImageView
-    android:layout_marginLeft="140dp"
-    android:layout_marginTop="30dp"
-    android:layout_width="100dp"
-    android:layout_height="110dp"
-    android:src="@mipmap/login"/>
+<!--<ImageView-->
+    <!--android:layout_marginLeft="140dp"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="110dp"-->
+    <!--android:src="@mipmap/login"/>-->
 
 <LinearLayout
-    android:layout_marginTop="35dp"
+
+    android:layout_marginTop="200dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <TextView
@@ -26,8 +27,10 @@ tools:context="com.example.administrator.shijeibei.Activity.LoginActivity">
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="账号:"
+
         android:textColor="@color/black"/>
     <EditText
+        android:id="@+id/edt_userName"
         android:layout_width="260dp"
         android:hint="手机号/邮箱"
         android:layout_height="wrap_content"
@@ -46,6 +49,7 @@ tools:context="com.example.administrator.shijeibei.Activity.LoginActivity">
         android:text="密码:"
         android:textColor="@color/black"/>
     <EditText
+        android:id="@+id/edt_password"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:hint="请输入密码"
@@ -55,9 +59,10 @@ tools:context="com.example.administrator.shijeibei.Activity.LoginActivity">
 
 <Button
     android:id="@+id/btn_login"
-    android:layout_marginLeft="260dp"
-    android:layout_marginTop="10dp"
-    android:layout_width="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="登录"
     android:textSize="20dp"
@@ -72,50 +77,51 @@ tools:context="com.example.administrator.shijeibei.Activity.LoginActivity">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
+        android:textColor="@color/white"
         android:text="没有账号立即注册"
         android:onClick="register"/>
-    <TextView
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text="忘记密码"/>
+    <!--<TextView-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="18sp"-->
+        <!--android:text="忘记密码"/>-->
 
 </LinearLayout>
-<TextView
-    android:layout_marginTop="50dp"
-    android:layout_marginLeft="130dp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="其他方式登录"
-    android:textSize="20sp"
-    android:textColor="@color/black"/>
-<LinearLayout
-    android:layout_marginTop="30dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <ImageView
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="20dp"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:src="@mipmap/qq"/>
-    <ImageView
-        android:layout_marginRight="20dp"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:src="@mipmap/weixin"/>
-    <ImageView
-        android:layout_marginRight="40dp"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:src="@mipmap/weibo"/>
+<!--<TextView-->
+    <!--android:layout_marginTop="50dp"-->
+    <!--android:layout_marginLeft="130dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="其他方式登录"-->
+    <!--android:textSize="20sp"-->
+    <!--android:textColor="@color/black"/>-->
+<!--<LinearLayout-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<ImageView-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:src="@mipmap/qq"/>-->
+    <!--<ImageView-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:src="@mipmap/weixin"/>-->
+    <!--<ImageView-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:src="@mipmap/weibo"/>-->
 
 
-</LinearLayout>
+<!--</LinearLayout>-->
 </LinearLayout>
 

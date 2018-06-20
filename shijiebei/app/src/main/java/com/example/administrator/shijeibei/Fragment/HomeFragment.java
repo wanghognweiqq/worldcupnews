@@ -81,6 +81,7 @@ public class HomeFragment extends Fragment {
         Thread thread= new DownloadThread();
         thread.start();
 
+
         tvLogin=view.findViewById(R.id.tv_login);
         tvLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,6 +91,13 @@ public class HomeFragment extends Fragment {
             }
         });
 
+//        tvRefresh=view.findViewById(R.id.tv_refresh);
+//        tvRefresh.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                refresh();
+//            }
+//        });
         refreshableView = view.findViewById(R.id.rv_home);
         refreshableView.setOnRefreshListener(new RefreshableView.PullToRefreshListener() {
             @Override
@@ -137,6 +145,12 @@ public class HomeFragment extends Fragment {
     }
 
 
+
+//    public void refresh() {
+////        finish();
+//        Intent intent=new Intent(context,MainActivity.class);
+//        startActivity(intent);
+//    }
 
 
 
