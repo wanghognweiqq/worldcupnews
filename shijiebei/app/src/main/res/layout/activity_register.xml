@@ -68,7 +68,7 @@
                 android:textSize="18dp" />
 
             <EditText
-                android:id="@+id/et_regist_name"
+                android:id="@+id/et_regist_username"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
@@ -95,7 +95,7 @@
                     android:textSize="18dp" />
 
                 <EditText
-                    android:id="@+id/et_name"
+                    android:id="@+id/et_regist_realname"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
@@ -146,5 +146,14 @@
                 android:gravity="center"
                 android:text="注册" />
         </LinearLayout>
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="430dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="注册"/>
+</RelativeLayout>
 
 </RelativeLayout>
