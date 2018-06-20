@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +15,7 @@ public class TeamA1Activity extends AppCompatActivity {
     private TextView teamcontext;
     private ImageView teamimage;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,7 @@ public class TeamA1Activity extends AppCompatActivity {
         teamtitle = findViewById(R.id.teamtitle);
         teamcontext = findViewById(R.id.teamcontext);
         teamimage = findViewById(R.id.teamimage);
+
 
         Bundle bundle = getIntent().getExtras();//获取从mainactivity中传过来的对象
 

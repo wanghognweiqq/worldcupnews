@@ -8,6 +8,8 @@
     tools:context="com.example.administrator.shijeibei.Activity.TeamA1Activity"
     >
 
+    <include layout="@layout/team_title" />
+
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -19,21 +21,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50sp"
-                android:background="@color/blue_400"
-                android:gravity="center"
-                android:text="Team"
-                android:textColor="#ffffff"
-                android:textSize="20dp" />
-
-            <TextView
                 android:id="@+id/teamtitle"
                 android:layout_width="match_parent"
                 android:layout_height="50sp"
                 android:gravity="center"
                 android:text="XX征战世界杯阵容"
-                android:textColor="#000000"
+                android:textColor="@color/white"
                 android:textSize="30dp" />
             <View
                 android:layout_width="wrap_content"
