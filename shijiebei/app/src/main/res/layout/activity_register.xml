@@ -8,8 +8,6 @@
     android:background="@mipmap/background_2"
     tools:context="com.example.administrator.shijeibei.Activity.RegisterActivity">
 
-
-
     <LinearLayout
         android:id="@+id/regist_main"
         android:layout_width="match_parent"
@@ -39,7 +37,6 @@
             android:textColorHint="@color/white"
             android:textColor="@color/white"
             android:theme="@style/MyEditText"/>
-
 
         <EditText
             android:id="@+id/et_regist_realname"
