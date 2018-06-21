@@ -9,18 +9,14 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 android:background="@mipmap/bg2"
 tools:context="com.example.administrator.shijeibei.Activity.LoginActivity">
-<!--<ImageView-->
-    <!--android:layout_marginLeft="140dp"-->
-    <!--android:layout_marginTop="30dp"-->
-    <!--android:layout_width="100dp"-->
-    <!--android:layout_height="110dp"-->
-    <!--android:src="@mipmap/login"/>-->
+
 
 <LinearLayout
 
     android:layout_marginTop="200dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <TextView
         android:layout_marginLeft="40dp"
         android:layout_width="wrap_content"
