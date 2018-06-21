@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,7 +77,7 @@ public class TimeFragment extends Fragment {
     }
 
     public void queryFromServer () {
-        String address = "http://10.7.85.227:8080/WorldCupNews_Server/selecttime.action";
+        String address = "http://10.7.85.219:8080/WorldCupNews_Server/selecttime.action";
         OkHttpUtil.sendOkHttpRequest(address, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {

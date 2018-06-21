@@ -1,37 +1,19 @@
-package net.onest.bean;
-
-import java.util.HashSet;
-import java.util.Set;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+package com.example.administrator.shijeibei.Entity;
 
 
-
-
-
-
-@Entity
-@Table(name="users")
 public class User {
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="user_id")
+
 	private Integer id;
-	@Column(name="user_username")
+
+
 	private String username;
-	@Column(name="user_passwd")
+
 	private String password;
-	@Column(name="user_email")
+
 	private String email;
-	@Column(name="user_realname")
-	private String realname;
+
+	private String  realname;
+	
 	
 	public Integer getId() {
 		return id;
@@ -57,11 +39,12 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 	public String getRealname() {
 		return realname;
 	}
+
 	public void setRealname(String realname) {
 		this.realname = realname;
 	}
-	
 }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.shijeibei">
 
@@ -20,8 +20,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.TeamA1Activity" />
-        <activity android:name=".Activity.LoginActivity" />
+
+        <activity android:name=".Activity.LoginActivity"></activity>
+
+
         <activity android:name=".Activity.RegisterActivity"></activity>
+
     </application>
 
 </manifest>

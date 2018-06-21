@@ -9,24 +9,29 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@mipmap/zuqiu">
+        android:background="@color/blue_400">
         <TextView
             android:gravity="center_vertical"
-            android:paddingLeft="125dp"
+            android:paddingLeft="102dp"
             android:textSize="30sp"
+            android:gravity="center"
+            android:paddingLeft="125dp"
+            android:textSize="20sp"
             android:layout_width="0dp"
             android:layout_weight="3"
             android:layout_height="50dp"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:text="世界杯新闻"/>
         <TextView
-            android:id="@+id/tv_refresh"
+            android:id="@+id/tv_login"
             android:textColor="#FFFFFF"
+            android:id="@+id/tv_refresh"
+            android:textColor="@color/white"
             android:paddingLeft="50dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="刷新"/>
+            android:text="登录 "/>
 
     </LinearLayout>
 
