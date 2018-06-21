@@ -7,7 +7,6 @@ android:layout_height="match_parent"
 android:background="@mipmap/background_1"
 tools:context="com.example.administrator.shijeibei.Activity.LoginActivity">
 
-
     <LinearLayout
         android:id="@+id/login_main"
         android:layout_centerHorizontal="true"
