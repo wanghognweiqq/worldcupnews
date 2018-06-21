@@ -8,24 +8,17 @@
     tools:context="com.example.administrator.shijeibei.Activity.TeamA1Activity"
     >
 
+    <include layout="@layout/team_title" />
+
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@mipmap/bg77">
+        android:background="@mipmap/bg9">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50sp"
-                android:background="@color/blue_400"
-                android:gravity="center"
-                android:text="Team"
-                android:textColor="#ffffff"
-                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/teamtitle"
@@ -53,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
-                android:textColor="@color/black"
+                android:textColor="#ffffff"
                 android:text="球队简介
 
 

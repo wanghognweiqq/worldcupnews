@@ -17,6 +17,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
+import com.example.administrator.shijeibei.Activity.LoginActivity;
 import com.example.administrator.shijeibei.Activity.MainActivity;
 import com.example.administrator.shijeibei.Adapter.ArticleAdapter;
 import com.example.administrator.shijeibei.Entity.Article;
@@ -37,7 +38,7 @@ import java.util.List;
 
 public class HomeFragment extends Fragment {
     private Context context;
-    private TextView tvRefresh;
+    private TextView tvLogin;
     private ListView lvNew;
     private RefreshableView refreshableView;
     List<Article> articles = new ArrayList<Article>();
@@ -79,6 +80,16 @@ public class HomeFragment extends Fragment {
         lvNew=view.findViewById(R.id.lv_new);
         Thread thread= new DownloadThread();
         thread.start();
+
+
+        tvLogin=view.findViewById(R.id.tv_login);
+        tvLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
 //        tvRefresh=view.findViewById(R.id.tv_refresh);
 //        tvRefresh.setOnClickListener(new View.OnClickListener() {
@@ -134,11 +145,13 @@ public class HomeFragment extends Fragment {
     }
 
 
+
 //    public void refresh() {
 ////        finish();
 //        Intent intent=new Intent(context,MainActivity.class);
 //        startActivity(intent);
 //    }
+
 
 
     @Override
