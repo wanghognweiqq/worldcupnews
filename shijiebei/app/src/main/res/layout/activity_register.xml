@@ -26,7 +26,7 @@
             android:layout_marginRight="25dp"
             android:hint="邮箱"
             android:textColorHint="@color/white"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:theme="@style/MyEditText"/>
 
         <EditText
