@@ -422,7 +422,7 @@ public class TeamFragment extends Fragment {
                             "　　6月17日 0:00 秘鲁-丹麦    \n" +
                             "　　6月21日 23:00 秘鲁-法国\n" +
                             "　　6月26日 22:00 秘鲁-澳大利亚";
-                    imgid = R.mipmap.bl;
+                    imgid = R.mipmap.bla1;
 
                     Bundle bundlec4 = new Bundle();// 创建Bundle对象
                     bundlec4.putString("title", texttitle );//  放入data值为int型

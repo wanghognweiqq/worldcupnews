@@ -4,11 +4,9 @@ package com.example.administrator.shijeibei.Activity;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,7 +22,6 @@ import okhttp3.Callback;
 import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
-import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class LoginActivity extends AppCompatActivity {
@@ -63,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
                 // (需指定参数的内容、参数的类型、编码方式）
                 //参数的内容
                 OkHttpClient okHttpClient=new OkHttpClient();
-                String username=edituserName.getText().toString().trim();
+                final String username=edituserName.getText().toString().trim();
                 String password=editpassword.getText().toString().trim();
                 if(TextUtils.isEmpty(username)||TextUtils.isEmpty(password)){
                     Looper.prepare();
@@ -91,7 +88,12 @@ public class LoginActivity extends AppCompatActivity {
                         @Override
                         public void onResponse(Call call, Response response) throws IOException {
                             if((response.body().string()).equals("loginsuccess")){
+                                String loginuser=username;
+//                                Looper.prepare();
+//                                Toast.makeText(LoginActivity.this,username,Toast.LENGTH_LONG).show();
+//                                Looper.loop();
                                 Intent intent=new Intent();
+                                intent.putExtra("loginuser",username);
                                 intent.setClass(LoginActivity.this,MainActivity.class);
                                 startActivity(intent);
 

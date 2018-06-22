@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.administrator.shijeibei.R;
-import com.example.administrator.shijeibei.Util.RegisterOkhttpUtil;
+import com.example.administrator.shijeibei.Util.OkHttpUtil;
 
 import java.io.IOException;
 
@@ -62,11 +62,15 @@ public class RegisterActivity extends AppCompatActivity {
         builder.add("password",password);
         builder.add("realname",realname);
         FormBody body = builder.build();
-        RegisterOkhttpUtil.sendOkHttpFormBodyRequest(address, body, new Callback() {
+        OkHttpUtil.sendOkHttpRequest(address, body, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-//                                    Toast.makeText(RegisterActivity.this,"请求失败",Toast.LENGTH_SHORT).show();
-                Log.i("MainActivity","请求失败");
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(RegisterActivity.this,"请求失败",Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
 
             @Override
@@ -91,25 +95,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 registerpassword.setText("");
                                 registerrealname.setText("");
                                 Toast.makeText(RegisterActivity.this,"该用户已注册",Toast.LENGTH_SHORT).show();
-
                         }
-//                        if(responseText.equals("registersuccess")){
-//                            Toast.makeText(RegisterActivity.this,"注册成功",Toast.LENGTH_SHORT).show();
-//                            Intent intent1 = new Intent(getApplicationContext(),LoginActivity.class);
-//                            startActivity(intent1);
-//                        }
-//                        else if (responseText.equals("null"){
-//                            Toast.makeText(RegisterActivity.this,"注册信息不能为空",Toast.LENGTH_SHORT).show();
-//
-//                        }
-//                        else {
-//                            registeremile.setText("");
-//                            registerusername.setText("");
-//                            registerpassword.setText("");
-//                            registerrealname.setText("");
-//                            Toast.makeText(RegisterActivity.this,"该用户已注册",Toast.LENGTH_SHORT).show();
-//
-//                        }
                     }
                 });
             }

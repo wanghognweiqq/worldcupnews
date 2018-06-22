@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.example.administrator.shijeibei.Activity.LoginActivity;
@@ -40,6 +41,7 @@ public class HomeFragment extends Fragment {
     private Context context;
     private TextView tvLogin;
     private ListView lvNew;
+
     private RefreshableView refreshableView;
     List<Article> articles = new ArrayList<Article>();
     Handler handler=new Handler(){
@@ -83,13 +85,29 @@ public class HomeFragment extends Fragment {
 
 
         tvLogin=view.findViewById(R.id.tv_login);
+        Intent intent=getActivity().getIntent();
+        String loginUser=intent.getStringExtra("loginuser");
+        if(loginUser==null){
+            loginUser="登录";
+        }
+        tvLogin.setText(loginUser);
+        final String str=loginUser;
+
         tvLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(context, LoginActivity.class);
-                startActivity(intent);
+                if(str=="登录"){
+                    Intent intent=getActivity().getIntent();
+                    intent.setClass(context,LoginActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    Toast.makeText(context,"已登录，请勿重复登录",Toast.LENGTH_LONG).show();
+                }
             }
         });
+
+
 
 //        tvRefresh=view.findViewById(R.id.tv_refresh);
 //        tvRefresh.setOnClickListener(new View.OnClickListener() {
@@ -102,9 +120,11 @@ public class HomeFragment extends Fragment {
         refreshableView.setOnRefreshListener(new RefreshableView.PullToRefreshListener() {
             @Override
             public void onRefresh() {
-                Intent intent=new Intent(context,MainActivity.class);
-                startActivity(intent);
+                Intent intent1=new Intent(context,MainActivity.class);
+                startActivity(intent1);
+
                 refreshableView.finishRefreshing();
+
             }
         },2);
 
@@ -159,4 +179,6 @@ public class HomeFragment extends Fragment {
         super.onAttach(context);
         this.context = context;
     }
+
+
 }
