@@ -44,6 +44,7 @@ tools:context="com.example.administrator.shijeibei.Activity.LoginActivity">
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
             android:text="登录"
             android:textColor="@color/white"
             android:textSize="20dp"

@@ -5,7 +5,7 @@
         <!--形状定义工具-->
         <shape>
             <!--设置形状填充的颜色，只有android:color一个属性-->
-            <solid android:color="#FFC4C4C4" />
+            <solid android:color="@color/blue_200" />
         </shape>
     </item>
 

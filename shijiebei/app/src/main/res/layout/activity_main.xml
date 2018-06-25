@@ -30,8 +30,7 @@
             android:gravity="center"
             android:padding="5dp"
             android:text="首页"
-            android:textColor="@drawable/tab_menu_text"
-            android:textSize="12sp"/>
+            android:textColor="@drawable/tab_menu_text" />
 
         <Button
             android:id="@+id/btn_time"
@@ -44,7 +43,7 @@
             android:gravity="center"
             android:padding="5sp"
             android:text="比赛时间"
-            android:textSize="12dp"
+
             android:textColor="@drawable/tab_menu_text"/>
 
         <Button
@@ -58,7 +57,6 @@
             android:gravity="center"
             android:padding="5sp"
             android:text="球队"
-            android:textSize="12dp"
             android:textColor="@drawable/tab_menu_text"/>
 
     </LinearLayout>
